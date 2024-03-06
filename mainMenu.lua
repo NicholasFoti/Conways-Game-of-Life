@@ -20,12 +20,6 @@ function scene:create(event)
     --Use for testing
     print("User choice set to:", userChoice)
 
-    --Create Background
-    local background = display.newImageRect("background.jpg", display.actualContentWidth, display.actualContentHeight)
-    background.x = display.contentCenterX
-    background.y = display.contentCenterY
-    sceneGroup:insert(background)
-
     --Create Title
     local title = display.newText("Conway's Game of Life", display.contentCenterX, 10, native.systemFontBold, 28)
     sceneGroup:insert(title)

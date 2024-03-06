@@ -11,12 +11,6 @@ function scene:create(event)
     --Use for testing
     print("User choice set to:", userChoice)
 
-    --Add Background
-    local background = display.newImageRect("background.jpg", display.actualContentWidth, display.actualContentHeight)
-    background.x = display.contentCenterX
-    background.y = display.contentCenterY
-    sceneGroup:insert(background)
-
     --Create Page Title (direct user what to do)
     local title = display.newText("Choose Grid Size", display.contentCenterX, display.contentCenterY - 100, native.systemFont, 24)
     title:setFillColor(1)

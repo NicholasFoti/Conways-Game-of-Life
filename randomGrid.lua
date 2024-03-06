@@ -192,11 +192,6 @@ function scene:create(event)
 
     local savedState = savedStates["randomGrid_" .. gridSize]
 
-    --Create Background
-    local background = display.newImageRect("background.jpg", display.actualContentWidth, display.actualContentHeight)
-    background.x = display.contentCenterX
-    background.y = display.contentCenterY
-    sceneGroup:insert(background)
 
     --Insert the Menu buttons
     createSaveMenuButton(sceneGroup)
